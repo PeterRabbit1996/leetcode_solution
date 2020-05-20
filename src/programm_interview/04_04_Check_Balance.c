@@ -68,6 +68,7 @@ struct TreeNode *buildTree(int treeVal[], int isNull[], int size)
 			continue;
 		}
 		struct TreeNode *node =(struct TreeNode *) malloc(sizeof(struct TreeNode));
+		memset(node, 0, sizeof(struct TreeNode));
 		node->val = treeVal[i];
 		tree_node[i] = node;
 	}
